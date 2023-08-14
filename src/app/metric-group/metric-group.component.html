@@ -1,0 +1,12 @@
+<div class="metric-list">
+    <app-metric 
+        *ngFor="let element of metricSection.elements" 
+        [label]="metricFieldDefinition(element.name).label"
+        [format]="metricFieldDefinition(element.name).format"
+        [type]="metricFieldDefinition(element.name).type"
+        [digitsInfo]="metricFieldDefinition(element.name).digitsInfo"
+        [value]="dataPoints[element.name]"
+    >
+    </app-metric>
+<div>
+

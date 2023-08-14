@@ -1,0 +1,14 @@
+.metric-label {
+    color: #31383F;
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.metric-value {
+    color: #231190;
+    font-family: Helvetica Neue;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 0px
+}

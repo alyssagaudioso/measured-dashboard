@@ -1,0 +1,24 @@
+.metric-overview {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+}
+
+.metric-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.metric-section-label {
+    color: #31383F;
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    padding-bottom: 9px;
+    border-bottom: solid 1px #D3D6DA;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.full-width {
+    width: 100%
+}

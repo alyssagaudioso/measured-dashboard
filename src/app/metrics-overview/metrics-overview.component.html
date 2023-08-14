@@ -1,0 +1,28 @@
+<div class="metric-overview">
+    <ng-container *ngFor="let metricSection of layout">
+        <div class="metric-section" [ngClass]="{ 'full-width': metricSection.type === ElementType.DATA_SET }">
+            <h2 class="metric-section-label">{{ metricSection.label }}</h2>
+            <div class="metric-section-container">
+                <app-metric-group 
+                    *ngIf="metricSection.type === ElementType.DATA_POINT"
+                    [metricSection]="metricSection"
+                    [fieldDefinitions]="fieldDefinitions"
+                    [dataPoints]="dataPoints"
+                >
+                </app-metric-group>
+
+                <app-data-grid 
+                    *ngIf="metricSection.type === ElementType.DATA_SET"
+                    [metricSection]="metricSection"
+                    [fieldDefinitions]="fieldDefinitions"
+                    [dataSet]="dataSet(metricSection.name)"
+                >
+                </app-data-grid>
+            </div>
+        </div>
+    </ng-container>
+</div>
+
+
+
+

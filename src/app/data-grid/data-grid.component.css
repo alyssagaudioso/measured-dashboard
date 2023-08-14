@@ -1,0 +1,21 @@
+.mat-mdc-header-cell {
+    color: #231190;
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.mat-mdc-row:nth-child(odd) {
+    background-color: #F6F6F6;
+}
+
+.mat-mdc-cell {
+    border: none;
+    white-space: nowrap;
+}
+
+.mat-mdc-footer-cell {
+    border-top: 1px solid black;
+    white-space: nowrap;
+}
